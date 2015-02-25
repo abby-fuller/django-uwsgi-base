@@ -21,4 +21,4 @@ RUN apt-get install -y git mercurial \
 
 RUN apt-get clean autoclean && apt-get autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-RUN easy_install pip && RUN pip install uwsgi
+RUN easy_install pip && pip install uwsgi
