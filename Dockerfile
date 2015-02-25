@@ -2,7 +2,8 @@ FROM ubuntu:trusty
 
 MAINTAINER Abby Fuller <abby.fuller@gmail.com>
 
-RUN add-apt-repository -y ppa:nginx/stable && RUN apt-get update
+RUN add-apt-repository -y ppa:nginx/stable && apt-get update
+
 
 RUN apt-get install -y git mercurial \
                           libjpeg-dev \
