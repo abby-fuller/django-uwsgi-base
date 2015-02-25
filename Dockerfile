@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 
 MAINTAINER Abby Fuller <abby.fuller@gmail.com>
 
-RUN apt-get install software-properties-common && add-apt-repository -y ppa:nginx/stable && apt-get update && apt-get -qy install git \
+RUN apt-get install -y software-properties-common && add-apt-repository -y ppa:nginx/stable && apt-get update && apt-get -y install git \
     mercurial \
     libjpeg-dev \
     python \
